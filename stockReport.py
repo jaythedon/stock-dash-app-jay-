@@ -27,6 +27,7 @@ def genrate_table(dataFrame,max_rows=10):
                 ])
         
 app = dash.Dash(__name__)
+server = app.server
 app.layout = html.Div(children=
 	[html.H1(children="Techincal Indicator",style={
             'textAlign': 'center',
